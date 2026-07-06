@@ -30,10 +30,10 @@ Full plan: `C:\Users\ADMIN\.claude\plans\effervescent-purring-breeze.md`
 21. kanban "Boardly" ($19, 5315) 🚀 (repo boardly-kanban) · 22. time-tracker "Timevault" ($29, 5316) 🚀 (repo timevault-tracker) · 23. habit-tracker "Streakly" ($15, desktop) 🚀 · 24. focus-dashboard "Deepdesk" ($15, desktop) 🚀 · 25. md-notes "Quillpad" ($29, desktop) 🚀 (repo quillpad-notes)
 
 ## Batch 6 — Developer tools
-26. cron-monitor "Pingcron" ($29, 5320) 📋 · 27. webhook-inspector "Hookscope" ($24, 5321) 📋 · 28. screenshot-api "Snapfleet" ($39, 5322) 📋 · 29. data-toolbox "Wrangle" ($15, desktop) 📋 · 30. db-backup "Vaultkeeper" ($39, 5323) 📋
+26. cron-monitor "Pingcron" ($29, 5320) 🚀 (repo pingcron) · 27. webhook-inspector "Hookscope" ($24, 5321) 🚀 (repo hookscope) · 28. screenshot-api "Snapfleet" ($39, 5322) 🚀 (repo snapfleet) · 29. data-toolbox "Wrangle" ($15, desktop) 🚀 (repo wrangle-toolbox) · 30. db-backup "Vaultkeeper" ($39, 5323) 🚀 (repo vaultkeeper)
 
 ## Batch 7 — Sales/commerce
-31. waitlist-referral "Queuecraft" ($29, 5324) 📋 · 32. testimonial-wall "Bravowall" ($29, 5325) 📋 · 33. price-monitor "Hawkwatch" ($34, 5326) 📋 · 34. email-campaigns "Postbird" ($59, 5327) 📋 · 35. license-server "Keymaster" ($49, 5328) 📋
+31. waitlist-referral "Queuecraft" ($29, 5324) 🚀 (repo queuecraft) · 32. testimonial-wall "Bravowall" ($29, 5325) 🚀 (repo bravowall) · 33. price-monitor "Hawkwatch" ($34, 5326) 🚀 (repo hawkwatch) · 34. email-campaigns "Postbird" ($59, 5327) 🚀 (repo postbird) · 35. license-server "Keymaster" ($49, 5328) 🚀 (repo keymaster)
 
 ## Batch 8 — Content/creator
 36. podcast-host "Castport" ($39, 5329) 📋 · 37. md-blog "Inkpress" ($29, 5330) 📋 · 38. rss-reader "Feedloft" ($24, 5331) 📋 · 39. clip-grabber "Reelsnag" ($24, desktop) 📋 · 40. tts-studio "Voicebarn" ($34, desktop) 📋

@@ -12,27 +12,118 @@ This repo is the **program brain**: the roadmap, the shared build spec, and a co
 4. Publish with `node publish.js <dir> "<description>"` (creates the public repo on github.com/bensblueprints and pushes; PAT read from `~/.ghpat`).
 5. Add its landing page + comparison posts to advancedmarketing.co (`build-software.js` generator in the `advancedmarketing-main` repo).
 
-## Shipped so far (15)
+## Shipped so far (49 of 50)
 
-| Brand | Repo | Replaces |
-|---|---|---|
-| PDFsmith | [pdf-toolkit](https://github.com/bensblueprints/pdf-toolkit) | SmallPDF $15/mo |
-| Cutaway | [bg-remover](https://github.com/bensblueprints/bg-remover) | remove.bg $9/mo |
-| WhisperDesk | [whisper-transcriber](https://github.com/bensblueprints/whisper-transcriber) | Otter.ai $16.99/mo |
-| Shrinkray | [image-compressor](https://github.com/bensblueprints/image-compressor) | TinyPNG Pro |
-| ClipDeck | [screen-recorder-desktop](https://github.com/bensblueprints/screen-recorder-desktop) | Loom $15/mo |
-| Upwatch | [uptime-monitor](https://github.com/bensblueprints/uptime-monitor) | UptimeRobot/Pingdom |
-| Trimly | [link-shortener](https://github.com/bensblueprints/link-shortener) | Bitly $29/mo |
-| Billcraft | [invoice-generator](https://github.com/bensblueprints/invoice-generator) | FreshBooks $19/mo |
-| Bookslot | [booking-page](https://github.com/bensblueprints/booking-page) | Calendly $10/mo |
-| Formforge | [form-builder](https://github.com/bensblueprints/form-builder) | Typeform $29/mo |
-| PostDock | [social-scheduler](https://github.com/bensblueprints/social-scheduler) | Buffer |
-| Linkleaf | [link-in-bio](https://github.com/bensblueprints/link-in-bio) | Linktree |
-| Scantrail | [qr-tracker](https://github.com/bensblueprints/qr-tracker) | QR Tiger $15/mo |
-| Cardsmith | [og-image-studio](https://github.com/bensblueprints/og-image-studio) | Bannerbear $49/mo |
-| SigCraft | [email-signature](https://github.com/bensblueprints/email-signature) | WiseStamp $6/mo |
+All repo links verified live on github.com/bensblueprints. Grouped by batch. Only Dealstack (Batch 9 CRM) remains to build.
 
-Batches 4–5 (Statfox, Shipnotes, Hearback, Docwell, Chatlet, Boardly, Timevault, Streakly, Deepdesk, Quillpad) are in active build. Batches 6–10 are fully planned in `plans/`.
+### Batch 1 — Local media/file tools
+
+| Brand | Repo | Replaces | Price |
+|---|---|---|---|
+| PDFsmith | [pdf-toolkit](https://github.com/bensblueprints/pdf-toolkit) | SmallPDF Pro $12/mo | $29 |
+| Cutaway | [bg-remover](https://github.com/bensblueprints/bg-remover) | remove.bg $9/mo | $24 |
+| WhisperDesk | [whisper-transcriber](https://github.com/bensblueprints/whisper-transcriber) | Otter.ai $16.99/mo | $39 |
+| Shrinkray | [image-compressor](https://github.com/bensblueprints/image-compressor) | TinyPNG Pro | $19 |
+| ClipDeck | [screen-recorder-desktop](https://github.com/bensblueprints/screen-recorder-desktop) | Loom $15/mo | $29 |
+
+### Batch 2 — Core VPS business tools
+
+| Brand | Repo | Replaces | Price |
+|---|---|---|---|
+| Upwatch | [uptime-monitor](https://github.com/bensblueprints/uptime-monitor) | UptimeRobot $8/mo / Pingdom | $39 |
+| Trimly | [link-shortener](https://github.com/bensblueprints/link-shortener) | Bitly $29/mo | $29 |
+| Billcraft | [invoice-generator](https://github.com/bensblueprints/invoice-generator) | FreshBooks $19/mo | $39 |
+| Bookslot | [booking-page](https://github.com/bensblueprints/booking-page) | Calendly $10/mo | $39 |
+| Formforge | [form-builder](https://github.com/bensblueprints/form-builder) | Typeform $29/mo | $39 |
+
+### Batch 3 — Marketing
+
+| Brand | Repo | Replaces | Price |
+|---|---|---|---|
+| PostDock | [social-scheduler](https://github.com/bensblueprints/social-scheduler) | Buffer $6/channel/mo | $49 |
+| Linkleaf | [link-in-bio](https://github.com/bensblueprints/link-in-bio) | Linktree $5–9/mo | $19 |
+| Scantrail | [qr-tracker](https://github.com/bensblueprints/qr-tracker) | QR Tiger $15/mo | $24 |
+| Cardsmith | [og-image-studio](https://github.com/bensblueprints/og-image-studio) | Bannerbear $49/mo | $39 |
+| SigCraft | [email-signature](https://github.com/bensblueprints/email-signature) | WiseStamp $6/mo | $15 |
+
+### Batch 4 — SaaS-team tools
+
+| Brand | Repo | Replaces | Price |
+|---|---|---|---|
+| Statfox | [web-analytics](https://github.com/bensblueprints/web-analytics) | Plausible $9–19/mo | $49 |
+| Shipnotes | [changelog-roadmap](https://github.com/bensblueprints/changelog-roadmap) | Canny $79/mo | $49 |
+| Hearback | [feedback-widget](https://github.com/bensblueprints/feedback-widget) | Hotjar Surveys $32/mo | $29 |
+| Docwell | [knowledge-base](https://github.com/bensblueprints/knowledge-base) | GitBook $79/mo | $29 |
+| Chatlet | [live-chat](https://github.com/bensblueprints/live-chat) | Crisp $95/mo | $49 |
+
+### Batch 5 — Productivity
+
+| Brand | Repo | Replaces | Price |
+|---|---|---|---|
+| Boardly | [boardly-kanban](https://github.com/bensblueprints/boardly-kanban) | Trello $5/user/mo | $19 |
+| Timevault | [timevault-tracker](https://github.com/bensblueprints/timevault-tracker) | Toggl $10/user/mo | $29 |
+| Streakly | [habit-tracker](https://github.com/bensblueprints/habit-tracker) | Habitify $5/mo | $15 |
+| Deepdesk | [focus-dashboard](https://github.com/bensblueprints/focus-dashboard) | Centered ~$10/mo | $15 |
+| Quillpad | [quillpad-notes](https://github.com/bensblueprints/quillpad-notes) | Notion $12/mo / Evernote $14.99/mo | $29 |
+
+### Batch 6 — Developer tools
+
+| Brand | Repo | Replaces | Price |
+|---|---|---|---|
+| Pingcron | [pingcron](https://github.com/bensblueprints/pingcron) | Cronitor $10/mo | $29 |
+| Hookscope | [hookscope](https://github.com/bensblueprints/hookscope) | Webhook.site Pro €9/mo | $24 |
+| Snapfleet | [snapfleet](https://github.com/bensblueprints/snapfleet) | Urlbox $19/mo | $39 |
+| Wrangle | [wrangle-toolbox](https://github.com/bensblueprints/wrangle-toolbox) | He3 $9.90/mo | $15 |
+| Vaultkeeper | [vaultkeeper](https://github.com/bensblueprints/vaultkeeper) | SimpleBackups $29+/mo | $39 |
+
+### Batch 7 — Sales/commerce
+
+| Brand | Repo | Replaces | Price |
+|---|---|---|---|
+| Queuecraft | [queuecraft](https://github.com/bensblueprints/queuecraft) | LaunchList Pro $29/mo | $29 |
+| Bravowall | [bravowall](https://github.com/bensblueprints/bravowall) | Senja $19/mo | $29 |
+| Hawkwatch | [hawkwatch](https://github.com/bensblueprints/hawkwatch) | Distill.io $12/mo | $34 |
+| Postbird | [postbird](https://github.com/bensblueprints/postbird) | Mailchimp $20+/mo | $59 |
+| Keymaster | [keymaster](https://github.com/bensblueprints/keymaster) | Keygen.sh $99/mo | $49 |
+
+### Batch 8 — Content/creator
+
+| Brand | Repo | Replaces | Price |
+|---|---|---|---|
+| Castport | [castport](https://github.com/bensblueprints/castport) | Transistor $19/mo | $39 |
+| Inkpress | [inkpress](https://github.com/bensblueprints/inkpress) | Ghost $9/mo | $29 |
+| Feedloft | [feedloft](https://github.com/bensblueprints/feedloft) | Feedly Pro $8/mo | $24 |
+| Reelsnag | [reelsnag](https://github.com/bensblueprints/reelsnag) | Downloader subscriptions $10–15/mo | $24 |
+| Voicebarn | [voicebarn](https://github.com/bensblueprints/voicebarn) | ElevenLabs Creator $22/mo | $34 |
+
+### Batch 9 — Ops/business
+
+| Brand | Repo | Replaces | Price |
+|---|---|---|---|
+| Droplink | [droplink](https://github.com/bensblueprints/droplink) | WeTransfer Pro $12/mo | $29 |
+| Snipvault | [snipvault](https://github.com/bensblueprints/snipvault) | Cacher $6/mo | $19 |
+| Inkseal | [inkseal](https://github.com/bensblueprints/inkseal) | DocuSign $10–25/mo | $49 |
+| Ledgerly | [ledgerly-expenses](https://github.com/bensblueprints/ledgerly-expenses) | Expensify $5/user/mo | $29 |
+
+### Batch 10 — Niche
+
+| Brand | Repo | Replaces | Price |
+|---|---|---|---|
+| Overlayr | [overlayr](https://github.com/bensblueprints/overlayr) | Streamlabs Ultra $19/mo | $24 |
+| Signboard | [signboard](https://github.com/bensblueprints/signboard) | Yodeck $8/screen/mo | $49 |
+| Serpdeck | [serpdeck](https://github.com/bensblueprints/serpdeck) | AccuRanker $129/mo | $39 |
+| Chatterbox | [chatterbox-comments](https://github.com/bensblueprints/chatterbox-comments) | Disqus Plus $12/mo | $24 |
+| Textract | [textract-ocr](https://github.com/bensblueprints/textract-ocr) | Adobe Acrobat Pro $19.99/mo | $19 |
+
+### Still to build (1)
+
+| Brand | Product | Price | Status |
+|---|---|---|---|
+| Dealstack | crm-lite | $39 | 🔨 building — `plans/crm-lite.md` |
+
+## Image prompts
+
+`image-prompts/` contains ready-to-paste image-generation prompts for every shipped product — hero image, dashboard mockup, OG card, and the 5 Product Hunt gallery shots from each launch kit — with a shared style block and a per-product accent color so the whole set renders as one visual family. See `image-prompts/README.md`.
 
 ## Program conventions
 

@@ -36,10 +36,10 @@ Full plan: `C:\Users\ADMIN\.claude\plans\effervescent-purring-breeze.md`
 31. waitlist-referral "Queuecraft" ($29, 5324) 🚀 (repo queuecraft) · 32. testimonial-wall "Bravowall" ($29, 5325) 🚀 (repo bravowall) · 33. price-monitor "Hawkwatch" ($34, 5326) 🚀 (repo hawkwatch) · 34. email-campaigns "Postbird" ($59, 5327) 🚀 (repo postbird) · 35. license-server "Keymaster" ($49, 5328) 🚀 (repo keymaster)
 
 ## Batch 8 — Content/creator
-36. podcast-host "Castport" ($39, 5329) 📋 · 37. md-blog "Inkpress" ($29, 5330) 📋 · 38. rss-reader "Feedloft" ($24, 5331) 📋 · 39. clip-grabber "Reelsnag" ($24, desktop) 📋 · 40. tts-studio "Voicebarn" ($34, desktop) 📋
+36. podcast-host "Castport" ($39, 5329) 🚀 (repo castport) · 37. md-blog "Inkpress" ($29, 5330) 🚀 (repo inkpress) · 38. rss-reader "Feedloft" ($24, 5331) 🚀 (repo feedloft) · 39. clip-grabber "Reelsnag" ($24, desktop) 🚀 (repo reelsnag) · 40. tts-studio "Voicebarn" ($34, desktop) 🚀 (repo voicebarn)
 
 ## Batch 9 — Ops/business
-41. file-transfer "Droplink" ($29, 5332) 📋 · 42. snippet-manager "Snipvault" ($19, 5333) 📋 · 43. e-signature "Inkseal" ($49, 5334) 📋 · 44. expense-tracker "Ledgerly" ($29, 5335) 📋 · 45. crm-lite "Dealstack" ($39, 5336) 📋
+41. file-transfer "Droplink" ($29, 5332) 🚀 (repo droplink) · 42. snippet-manager "Snipvault" ($19, 5333) 🚀 (repo snipvault) · 43. e-signature "Inkseal" ($49, 5334) 🚀 (repo inkseal) · 44. expense-tracker "Ledgerly" ($29, 5335) 🚀 (repo ledgerly-expenses) · 45. crm-lite "Dealstack" ($39, 5336) 📋
 
 ## Batch 10 — Niche
-46. stream-overlays "Overlayr" ($24, 5337) 📋 · 47. digital-signage "Signboard" ($49, 5338) 📋 · 48. rank-tracker "Serpdeck" ($39, 5339) 📋 · 49. comment-widget "Chatterbox" ($24, 5340) 📋 · 50. ocr-tool "Textract" ($19, desktop) 📋
+46. stream-overlays "Overlayr" ($24, 5337) 🚀 (repo overlayr) · 47. digital-signage "Signboard" ($49, 5338) 🚀 (repo signboard) · 48. rank-tracker "Serpdeck" ($39, 5339) 🚀 (repo serpdeck) · 49. comment-widget "Chatterbox" ($24, 5340) 🚀 (repo chatterbox-comments) · 50. ocr-tool "Textract" ($19, desktop) 🚀 (repo textract-ocr)

@@ -12,9 +12,9 @@ This repo is the **program brain**: the roadmap, the shared build spec, and a co
 4. Publish with `node publish.js <dir> "<description>"` (creates the public repo on github.com/bensblueprints and pushes; PAT read from `~/.ghpat`).
 5. Add its landing page + comparison posts to advancedmarketing.co (`build-software.js` generator in the `advancedmarketing-main` repo).
 
-## Shipped so far (49 of 50)
+## Shipped ✅ ALL 50 OF 50
 
-All repo links verified live on github.com/bensblueprints. Grouped by batch. Only Dealstack (Batch 9 CRM) remains to build.
+All repo links verified live on github.com/bensblueprints. Grouped by batch. The full suite is built, verified, and published.
 
 ### Batch 1 — Local media/file tools
 
@@ -104,6 +104,7 @@ All repo links verified live on github.com/bensblueprints. Grouped by batch. Onl
 | Snipvault | [snipvault](https://github.com/bensblueprints/snipvault) | Cacher $6/mo | $19 |
 | Inkseal | [inkseal](https://github.com/bensblueprints/inkseal) | DocuSign $10–25/mo | $49 |
 | Ledgerly | [ledgerly-expenses](https://github.com/bensblueprints/ledgerly-expenses) | Expensify $5/user/mo | $29 |
+| Dealstack | [dealstack-crm](https://github.com/bensblueprints/dealstack-crm) | Pipedrive $14/user/mo | $39 |
 
 ### Batch 10 — Niche
 
@@ -115,11 +116,7 @@ All repo links verified live on github.com/bensblueprints. Grouped by batch. Onl
 | Chatterbox | [chatterbox-comments](https://github.com/bensblueprints/chatterbox-comments) | Disqus Plus $12/mo | $24 |
 | Textract | [textract-ocr](https://github.com/bensblueprints/textract-ocr) | Adobe Acrobat Pro $19.99/mo | $19 |
 
-### Still to build (1)
 
-| Brand | Product | Price | Status |
-|---|---|---|---|
-| Dealstack | crm-lite | $39 | 🔨 building — `plans/crm-lite.md` |
 
 ## Image prompts
 

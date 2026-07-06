@@ -24,7 +24,7 @@ Full plan: `C:\Users\ADMIN\.claude\plans\effervescent-purring-breeze.md`
 11. social-scheduler "PostDock" ($49, port 5306) 🚀 · 12. link-in-bio "Linkleaf" ($19, port 5307) 🚀 · 13. qr-tracker "Scantrail" ($24, port 5308) 🚀 · 14. og-image-studio "Cardsmith" ($39, port 5309) 🚀 · 15. email-signature "SigCraft" ($15, desktop) 🚀 — rest 🔨
 
 ## Batch 4 — SaaS-team tools
-16. web-analytics "Statfox" ($49, 5310) 🚀 · 17. changelog-roadmap "Shipnotes" ($49, 5311) 🚀 · 18. feedback-widget "Hearback" ($29, 5312) 🚀 · 19. knowledge-base "Docwell" ($29, 5313) 🚀 · 20. live-chat "Chatlet" ($49, 5314) 🔨
+16. web-analytics "Statfox" ($49, 5310) 🚀 · 17. changelog-roadmap "Shipnotes" ($49, 5311) 🚀 · 18. feedback-widget "Hearback" ($29, 5312) 🚀 · 19. knowledge-base "Docwell" ($29, 5313) 🚀 · 20. live-chat "Chatlet" ($49, 5314) 🚀
 
 ## Batch 5 — Productivity
 21. kanban "Boardly" ($19, 5315) 🚀 (repo boardly-kanban) · 22. time-tracker "Timevault" ($29, 5316) 🚀 (repo timevault-tracker) · 23. habit-tracker "Streakly" ($15, desktop) 🚀 · 24. focus-dashboard "Deepdesk" ($15, desktop) 🚀 · 25. md-notes "Quillpad" ($29, desktop) 🚀 (repo quillpad-notes)

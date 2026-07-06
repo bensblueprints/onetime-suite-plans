@@ -1,0 +1,9 @@
+# Whitelist mode: this meta repo tracks only the program files.
+# App directories are their own repos; blog/ and landing-pages/ are separate repos.
+/*
+!/plans
+!.gitignore
+!BUILD-SPEC.md
+!ROADMAP.md
+!README.md
+!publish.js

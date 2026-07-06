@@ -24,22 +24,22 @@ Full plan: `C:\Users\ADMIN\.claude\plans\effervescent-purring-breeze.md`
 11. social-scheduler "PostDock" ($49, port 5306) 🚀 · 12. link-in-bio "Linkleaf" ($19, port 5307) 🚀 · 13. qr-tracker "Scantrail" ($24, port 5308) 🚀 · 14. og-image-studio "Cardsmith" ($39, port 5309) 🚀 · 15. email-signature "SigCraft" ($15, desktop) 🚀 — rest 🔨
 
 ## Batch 4 — SaaS-team tools
-16. web-analytics ($49) · 17. changelog-roadmap ($49) · 18. feedback-widget ($29) · 19. knowledge-base ($29) · 20. live-chat ($49) — ⬜
+16. web-analytics "Statfox" ($49, 5310) 🚀 · 17. changelog-roadmap "Shipnotes" ($49, 5311) 🚀 · 18. feedback-widget "Hearback" ($29, 5312) 🚀 · 19. knowledge-base "Docwell" ($29, 5313) 🚀 · 20. live-chat "Chatlet" ($49, 5314) 🔨
 
 ## Batch 5 — Productivity
-21. kanban ($19) · 22. time-tracker ($29) · 23. habit-tracker ($15) · 24. focus-dashboard ($15) · 25. md-notes ($29) — ⬜
+21. kanban "Boardly" ($19, 5315) 🚀 (repo boardly-kanban) · 22. time-tracker "Timevault" ($29, 5316) 🚀 (repo timevault-tracker) · 23. habit-tracker "Streakly" ($15, desktop) 🚀 · 24. focus-dashboard "Deepdesk" ($15, desktop) 🚀 · 25. md-notes "Quillpad" ($29, desktop) 🚀 (repo quillpad-notes)
 
 ## Batch 6 — Developer tools
-26. cron-monitor ($29) · 27. webhook-inspector ($24) · 28. screenshot-api ($39) · 29. data-toolbox ($15) · 30. db-backup ($39) — ⬜
+26. cron-monitor "Pingcron" ($29, 5320) 📋 · 27. webhook-inspector "Hookscope" ($24, 5321) 📋 · 28. screenshot-api "Snapfleet" ($39, 5322) 📋 · 29. data-toolbox "Wrangle" ($15, desktop) 📋 · 30. db-backup "Vaultkeeper" ($39, 5323) 📋
 
 ## Batch 7 — Sales/commerce
-31. waitlist-referral ($29) · 32. testimonial-wall ($29) · 33. price-monitor ($34) · 34. email-campaigns ($59) · 35. license-server ($49) — ⬜
+31. waitlist-referral "Queuecraft" ($29, 5324) 📋 · 32. testimonial-wall "Bravowall" ($29, 5325) 📋 · 33. price-monitor "Hawkwatch" ($34, 5326) 📋 · 34. email-campaigns "Postbird" ($59, 5327) 📋 · 35. license-server "Keymaster" ($49, 5328) 📋
 
 ## Batch 8 — Content/creator
-36. podcast-host ($39) · 37. md-blog ($29) · 38. rss-reader ($24) · 39. clip-grabber ($24) · 40. tts-studio ($34) — ⬜
+36. podcast-host "Castport" ($39, 5329) 📋 · 37. md-blog "Inkpress" ($29, 5330) 📋 · 38. rss-reader "Feedloft" ($24, 5331) 📋 · 39. clip-grabber "Reelsnag" ($24, desktop) 📋 · 40. tts-studio "Voicebarn" ($34, desktop) 📋
 
 ## Batch 9 — Ops/business
-41. file-transfer ($29) · 42. snippet-manager ($19) · 43. e-signature ($49) · 44. expense-tracker ($29) · 45. crm-lite ($39) — ⬜
+41. file-transfer "Droplink" ($29, 5332) 📋 · 42. snippet-manager "Snipvault" ($19, 5333) 📋 · 43. e-signature "Inkseal" ($49, 5334) 📋 · 44. expense-tracker "Ledgerly" ($29, 5335) 📋 · 45. crm-lite "Dealstack" ($39, 5336) 📋
 
 ## Batch 10 — Niche
-46. stream-overlays ($24) · 47. digital-signage ($49) · 48. rank-tracker ($39) · 49. comment-widget ($24) · 50. ocr-tool ($19) — ⬜
+46. stream-overlays "Overlayr" ($24, 5337) 📋 · 47. digital-signage "Signboard" ($49, 5338) 📋 · 48. rank-tracker "Serpdeck" ($39, 5339) 📋 · 49. comment-widget "Chatterbox" ($24, 5340) 📋 · 50. ocr-tool "Textract" ($19, desktop) 📋

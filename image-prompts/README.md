@@ -43,5 +43,5 @@ Near-black background `#0B0E14`, one accent color per product (table below), sof
 | Boardly | `#FBBF24` | | Serpdeck | `#99F6E4` |
 | Timevault | `#2DD4BF` | | Chatterbox | `#BEF264` |
 | Streakly | `#FB7185` | | Textract | `#FED7AA` |
-| Deepdesk | `#818CF8` | | | |
+| Deepdesk | `#818CF8` | | Ledgerly | `#A7F3D0` |
 | Quillpad | `#A3E635` | | | |

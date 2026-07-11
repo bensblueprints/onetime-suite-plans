@@ -1,6 +1,8 @@
 # One-Time-Purchase Software Factory — Roadmap
 
-50 products replacing monthly SaaS with one-time purchases. Public MIT source on github.com/bensblueprints (dev portfolio), packaged/1-click version sold on Whop. Each ships with a launch kit (Product Hunt listing, ad copy, acquisition strategy).
+102 products replacing monthly SaaS with one-time purchases. Public MIT source on github.com/bensblueprints (dev portfolio), packaged/1-click version sold on Whop. Each ships with a launch kit (Product Hunt listing, ad copy, acquisition strategy).
+
+**57 of 102 products SHIPPED (🚀, verified live on github.com/bensblueprints).** That's the original Products 1–50 (SHIPPED 2026-07-07) plus 7 built out-of-order: door-tracker, famping (Batch 21, #101–102), memeforge (#61), orgtree (#75), renewcheck (#77), paletteforge (#92), iconforge (#95). The remaining 45 products are PLANNED (📋) — build plans in `plans/<app>.md`, BUILD-SPEC.md conventions apply to all (dual desktop/VPS mode where marked "web", launch-kit/, MIT license, smoke test before done). Ports 5341–5372 assigned to web apps, sequential, no collisions with 5301–5340.
 
 Full plan: `C:\Users\ADMIN\.claude\plans\effervescent-purring-breeze.md`
 
@@ -43,3 +45,45 @@ Full plan: `C:\Users\ADMIN\.claude\plans\effervescent-purring-breeze.md`
 
 ## Batch 10 — Niche
 46. stream-overlays "Overlayr" ($24, 5337) 🚀 (repo overlayr) · 47. digital-signage "Signboard" ($49, 5338) 🚀 (repo signboard) · 48. rank-tracker "Serpdeck" ($39, 5339) 🚀 (repo serpdeck) · 49. comment-widget "Chatterbox" ($24, 5340) 🚀 (repo chatterbox-comments) · 50. ocr-tool "Textract" ($19, desktop) 🚀 (repo textract-ocr)
+
+---
+
+# Batch 11–20 — Products 51–100 (PLANNED)
+
+## Batch 11 — Support & Ops
+51. helpdesk-tickets "Deskly" vs Zendesk $55/mo ($49, 5341) 📋 · 52. status-page "Upkeep Status" vs Statuspage.io $29/mo ($29, 5342) 📋 · 53. broken-link-checker "Linkguard" vs Ahrefs/Dr Link Check ($24, 5343) 📋 · 54. sitemap-generator "Maptrail" vs Screaming Frog £199/yr ($19, desktop) 📋 · 55. api-docs-generator "Docsmith API" vs ReadMe.io $99/mo ($29, desktop) 📋
+
+## Batch 12 — Security/Dev
+56. password-manager-selfhosted "Vaultly" vs 1Password Teams $7.99/user/mo ($39, 5344) 📋 · 57. 2fa-authenticator-backup "Keyloop" vs Authy/1Password ($19, desktop) 📋 · 58. env-secrets-manager "Secretbox" vs Doppler $12/user/mo ($39, 5345) 📋 · 59. ssl-cert-monitor "Certwatch" vs paid SSL monitors $10-20/mo ($24, 5346) 📋 · 60. log-viewer-aggregator "Logbin" vs Papertrail $7+/mo ($34, 5347) 📋
+
+## Batch 13 — Content creation
+61. meme-generator "Memeforge" vs Kapwing $16/mo ($15 intro / $39 launch, desktop) 🚀 github.com/bensblueprints/memeforge · 62. resume-builder "Resumecraft" vs Zety $23.70/mo ($19, desktop) 📋 · 63. proposal-generator "Pitchcraft" vs Proposify/PandaDoc $19+/mo ($29, 5348) 📋 · 64. contract-templates "Contractly" vs PandaDoc templates ($29, desktop) 📋 · 65. video-clip-captioner "Captionly" vs Submagic $18-39/mo ($34, desktop) 📋
+
+## Batch 14 — Marketing extras
+66. utm-campaign-builder "UTMcraft" vs UTM.io $29/mo ($19, 5349) 📋 · 67. affiliate-tracker "Reflink" vs Tapfiliate $89/mo ($39, 5350) 📋 · 68. review-aggregator-widget "Star Stack" vs Trustpilot Business $199+/mo ($29, 5351) 📋 · 69. heatmap-session-recorder "Clickmap" vs Hotjar $39+/mo ($49, 5352) 📋 · 70. ab-testing-tool "Splitpoint" vs VWO $199/mo ($49, 5353) 📋
+
+## Batch 15 — Team/HR
+71. applicant-tracker "Hirestack" vs Greenhouse/BambooHR ($49, 5354) 📋 · 72. shift-scheduler "Shiftly" vs When I Work $2.50/user/mo ($29, 5355) 📋 · 73. onboarding-checklist "Rampcheck" vs Trainual $99/mo ($29, 5356) 📋 · 74. timesheet-approval "Punchcard" vs QuickBooks Time $10+/mo ($29, 5357) 📋 · 75. org-chart-builder "Orgtree" vs Pingboard $99/mo ($19 intro / $49 launch, desktop) 🚀 github.com/bensblueprints/orgtree
+
+## Batch 16 — Finance/personal
+76. budget-planner-personal "Ledgerlite Home" vs YNAB $14.99/mo ($15, desktop) 📋 · 77. subscription-tracker "Renewcheck" vs Rocket Money premium ($15 intro / $39 launch, desktop) 🚀 github.com/bensblueprints/renewcheck · 78. recurring-billing-mini "Billoop" vs Chargebee ($49, 5358) 📋 · 79. quote-estimator "Quotewell" vs PandaDoc/Proposify ($29, desktop) 📋 · 80. receipt-scanner-expense "Snapreceipt" vs Expensify $5-9/user/mo ($19, desktop) 📋
+
+## Batch 17 — Local business
+81. property-listing-site "Listcraft" vs Zillow Premier Agent ($39, 5359) 📋 · 82. restaurant-menu-qr "Menuly" vs Toast QR $29+/mo ($24, 5360) 📋 · 83. appointment-reminder-sms "Remindly" (BYO Twilio) vs SimpleTexting $29+/mo ($34, 5361) 📋 · 84. review-request-automator "Askback" (BYO Twilio/SMTP) vs Podium $289/mo ($34, 5362) 📋 · 85. local-seo-citation-tracker "Citewatch" vs BrightLocal $39+/mo ($34, 5363) 📋
+
+## Batch 18 — Education/community
+86. course-builder-lms "Lessonforge" vs Teachable $39+/mo + fees ($49, 5364) 📋 · 87. quiz-builder "Quizcraft" vs Typeform/Outgrow ($29, 5365) 📋 · 88. community-forum "Forumly" vs Circle $89/mo ($39, 5366) 📋 · 89. member-directory "Roster" vs Glue Up ($19, 5367) 📋 · 90. event-registration "Eventcraft" vs Eventbrite fees (2.7%+$0.79/ticket) ($39, 5368) 📋
+
+## Batch 19 — Creative/design
+91. mockup-generator "Mockcraft" vs Placeit $14.95/mo ($19, desktop) 📋 · 92. color-palette-brand-kit "Paletteforge" vs Coolors Pro ($15 intro / $39 launch, desktop) 🚀 github.com/bensblueprints/paletteforge · 93. social-media-graphics-templates "Postcraft Templates" vs Canva Pro $12.99/mo ($19, desktop) 📋 · 94. presentation-builder "Slidecraft" vs Beautiful.ai $12-40/mo ($29, desktop) 📋 · 95. icon-favicon-generator "Iconforge" vs Iconscout subs ($15 intro / $39 launch, desktop) 🚀 github.com/bensblueprints/iconforge
+
+## Batch 20 — Misc SaaS killers
+96. redirect-manager "Redirectly" vs Rebrandly $29+/mo ($24, 5369) 📋 · 97. customer-portal-billing "Clientdesk" vs ChartMogul/Baremetrics $50+/mo ($39, 5370) 📋 · 98. nps-survey-tool "Pulsecheck" vs Delighted $224/mo ($29, 5371) 📋 · 99. data-backup-cloud-sync "Syncvault" vs Backblaze/iDrive ($29, desktop) 📋 · 100. feedback-roadmap-voting "Voicebox" vs Canny $50+/mo ($34, 5372) 📋
+
+---
+
+## Batch 21 — Location tracking (bonus, shared engine)
+Both apps share one core "location-ping" backend + Capacitor mobile client (companion app pings GPS every 5 min in background — precedent: Neon Piano's Capacitor Android/iOS build). Build the engine once as a library, skin twice with distinct branding/UI and a distinct Whop listing each.
+
+101. family-location-tracker "FamPing" vs Life360 Gold/Silver $7.99-14.99/mo ($39 intro / $299 launch, 1,000-license cap, 5373) 🚀 github.com/bensblueprints/famping — LIVE at http://eshf4gsqos49pmiihmdbbpdp.212.28.184.24.sslip.io (Coolify/Contabo, project "OneTime Suite"). Phase 1 built+verified (geofence-labeled stops, time-per-place breakdown, day simulator). Phase 2 (native mobile app) not started.
+102. field-team-tracker "Door Tracker" vs Badger Maps $58-119/user/mo, SalesRabbit $25-45/user/mo ($49 intro / $299 launch, 1,000-license cap, 5374) 🚀 github.com/bensblueprints/door-tracker — LIVE at http://oolo4b5cgpfalggpljusiajk.212.28.184.24.sslip.io (Coolify/Contabo, project "OneTime Suite"). Phase 1 built+verified. Phase 2 Android app built+verified end-to-end on a real emulator (mobile/); iOS not built (needs a Mac); background-when-minimized tracking is a documented limitation, not yet solved.

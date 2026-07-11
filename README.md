@@ -1,6 +1,6 @@
-# Onetime Suite — 50 Pay-Once Softwares (Program Hub)
+# Onetime Suite — 102 Pay-Once Softwares (Program Hub)
 
-50 simple, self-hostable softwares that replace monthly-subscription SaaS with a **one-time purchase**. Public MIT source (dev portfolio), packaged 1-click versions sold on Whop, marketing hub at [advancedmarketing.co/software](https://advancedmarketing.co/software/).
+102 simple, self-hostable softwares that replace monthly-subscription SaaS with a **one-time purchase**. Public MIT source (dev portfolio), packaged 1-click versions sold on Whop, marketing hub at [advancedmarketing.co/software](https://advancedmarketing.co/software/).
 
 This repo is the **program brain**: the roadmap, the shared build spec, and a complete build plan for every not-yet-built product — so any developer (or AI agent, on any model) can resume the program cold.
 
@@ -12,9 +12,9 @@ This repo is the **program brain**: the roadmap, the shared build spec, and a co
 4. Publish with `node publish.js <dir> "<description>"` (creates the public repo on github.com/bensblueprints and pushes; PAT read from `~/.ghpat`).
 5. Add its landing page + comparison posts to advancedmarketing.co (`build-software.js` generator in the `advancedmarketing-main` repo).
 
-## Shipped ✅ ALL 50 OF 50
+## Shipped ✅ 57 OF 102
 
-All repo links verified live on github.com/bensblueprints. Grouped by batch. The full suite is built, verified, and published.
+All repo links verified live on github.com/bensblueprints (checked via `gh repo view`). Grouped by batch. Products 1–50 (Batches 1–10) are fully built, verified, and published. Beyond that, 7 more products were built out of build order: Door Tracker (#101), FamPing (#102), Memeforge (#61), Orgtree (#75), Renewcheck (#77), Paletteforge (#92), and Iconforge (#95) — see ROADMAP.md for the full 102-product list including the 45 still-planned products.
 
 ### Batch 1 — Local media/file tools
 

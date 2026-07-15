@@ -4,6 +4,11 @@
 
 This repo is the **program brain**: the roadmap, the shared build spec, and a complete build plan for every not-yet-built product — so any developer (or AI agent, on any model) can resume the program cold.
 
+> **2026-07-16 — Whop-native licensing is LIVE across all 101 apps.** Purchases on
+> Whop are validated in-app (OAuth sign-in, per-app experience, 3-device cap for
+> desktop, one-time activation for self-hosted — no phone-home after). Status,
+> customer flows, and build instructions: **[LICENSING.md](LICENSING.md)**.
+
 ## How to build the next product
 
 1. Read `BUILD-SPEC.md` (shared requirements: stack, dual-mode desktop/VPS, repo files, launch-kit contents, verification rules).

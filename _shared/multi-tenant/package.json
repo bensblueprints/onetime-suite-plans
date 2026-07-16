@@ -1,0 +1,8 @@
+{
+  "name": "@onetimesuite/multi-tenant",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hosted multi-tenant layer for OneTimeSuite web apps: email+password auth, per-user SQLite DB routing, login gate. Vendor the whole directory into <app>/server/multi-tenant/. The \"type\":\"commonjs\" here keeps these .js files CJS even inside \"type\":\"module\" apps (load via createRequire).",
+  "type": "commonjs",
+  "main": "index.js"
+}

@@ -84,6 +84,10 @@ All type-relevant checkboxes ✓ → Status `LAUNCHED`, `Last Agent Update` = da
 - web: C + D + E + F complete
 - dual: B + C + D + E + F complete
 
+## Deployment capacity rule (measured 2026-07-16)
+
+Contabo VPS: 24GB RAM, ~9.5GB available, **183 containers already running, no swap**. Therefore: **ROLLING web deploys only** — spin up each app's Coolify container in its Day-#≤+3 prep window, never bulk-deploy the remaining 69. One-time hardening: add an 8GB swapfile + set a ~256–384MB memory limit on every new Coolify app. Note: the 45 newest web apps have never had their Docker image built — the first Coolify deploy is the real build test. Full program checklist: Notion page "✅ Go-Live Master Checklist" in the Launch HQ.
+
 ## Prep-ahead lane (do this when not launching)
 
 Work rows with `Day # ≤ today+3`: pre-build installers, pre-create Coolify apps + deploy keys, pre-fix Dockerfiles, draft social copy into `Blockers / Notes`. Set Status → `Prepping` / `Ready`. Launch day should take ~20 minutes.

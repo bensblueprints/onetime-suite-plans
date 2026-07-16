@@ -59,7 +59,7 @@ Confirm the Whop license gate is present (`license-gate.js` required at top of E
 3. **Persistent storage**: `POST /api/v1/applications/{uuid}/storages` with `type:"persistent"` for `/app/data` — named volume, verified to survive redeploys. Do NOT rely on anonymous volumes.
 4. **Custom domain**: `<slug>.onetimesuite.com` — wildcard DNS + Traefik wildcard router already live; set the domain on the Coolify app.
 5. Verify: health endpoint + admin login via curl; then tick `Web Deployed`, `Subdomain Live`, set `Live URL`.
-6. Also publish a source Release on `-mvp`? No — web apps deliver via `npm run activate` self-hosting docs; the purchase gates activation.
+6. **HOSTED MODEL (user decision 2026-07-16): we host everything for web-app customers.** The bare `<slug>.onetimesuite.com` is the demo; each buyer gets their own container at `<slug>-<customer>.onetimesuite.com` (one container per customer — apps are single-tenant by design; ~61MiB each, ≈$1/customer/yr). Provisioning is automated by the **OTS Provisioner** (Whop webhook → Coolify API; build pending — see Notion "🛡 Production Hardening & Cost Plan"). Until the provisioner ships, a web sale = manually provision the customer instance same-day. Web launch day includes a provision-then-destroy test of that app. Self-hosting via `npm run activate` remains available for DIY buyers.
 
 ### D. Site flip
 1. In `onetimesuite-com/build.js` add the slug to `AVAILABLE_SLUGS`.

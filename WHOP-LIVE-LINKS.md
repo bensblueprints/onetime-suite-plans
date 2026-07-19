@@ -12,6 +12,7 @@ Company: Benji's AI Empire (biz_Ro2hWjwgeK5rm8) — whop.com/benjisaiempire
 | Bravowall — Self-Hosted Testimonial Walls + PNG Card Export | $29 | https://whop.com/benjisaiempire/bravowall | https://whop.com/checkout/plan_5h3xwDCTo8X67 |
 | Captionly — Burn karaoke captions onto your clips, all on your own hardware. | $34 | https://whop.com/benjisaiempire/captionly | https://whop.com/checkout/plan_jPOUQnfoKZsOm |
 | Cardsmith — Self-Hosted Social Card / OG Image API | $39 | https://whop.com/benjisaiempire/cardsmith | https://whop.com/checkout/plan_itgK637cAUQgy |
+| Clip Pipeline — The Opus Clip replacement you buy once. | $49 | https://whop.com/benjisaiempire/clip-pipeline | https://whop.com/checkout/plan_KQUm44kIIVYNA |
 | Castport — Self-Hosted Podcast Hosting + Valid RSS | $39 | https://whop.com/benjisaiempire/castport | https://whop.com/checkout/plan_yzJcQeZmKVGoH |
 | Certwatch — SSL certificate and domain expiry monitoring you own forever. | $24 | https://whop.com/benjisaiempire/certwatch | https://whop.com/checkout/plan_LquyxWCub7VBG |
 | Chatlet — Self-Hosted Live Chat for Your Website | $49 | https://whop.com/benjisaiempire/chatlet-app | https://whop.com/checkout/plan_MUXM7Q3RL9Y6f |

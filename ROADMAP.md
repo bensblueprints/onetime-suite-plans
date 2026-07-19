@@ -1,8 +1,8 @@
 # One-Time-Purchase Software Factory — Roadmap
 
-102 products replacing monthly SaaS with one-time purchases. Public MIT source on github.com/bensblueprints (dev portfolio), packaged/1-click version sold on Whop. Each ships with a launch kit (Product Hunt listing, ad copy, acquisition strategy).
+103 products replacing monthly SaaS with one-time purchases. Public MIT source on github.com/bensblueprints (dev portfolio), packaged/1-click version sold on Whop. Each ships with a launch kit (Product Hunt listing, ad copy, acquisition strategy).
 
-**102 of 102 products SHIPPED (🚀, verified live on github.com/bensblueprints).** Products 51–100 were built and published 2026-07-12, completing the program. That's the original Products 1–50 (SHIPPED 2026-07-07) plus 7 built out-of-order: door-tracker, famping (Batch 21, #101–102), memeforge (#61), orgtree (#75), renewcheck (#77), paletteforge (#92), iconforge (#95). The remaining 45 products are PLANNED (📋) — build plans in `plans/<app>.md`, BUILD-SPEC.md conventions apply to all (dual desktop/VPS mode where marked "web", launch-kit/, MIT license, smoke test before done). Ports 5341–5372 assigned to web apps, sequential, no collisions with 5301–5340.
+**103 of 103 products SHIPPED (🚀, verified live on github.com/bensblueprints).** Product #103 (Clip Pipeline) added 2026-07-19, out-of-band of the original 102-product program. Products 51–100 were built and published 2026-07-12, completing the program. That's the original Products 1–50 (SHIPPED 2026-07-07) plus 7 built out-of-order: door-tracker, famping (Batch 21, #101–102), memeforge (#61), orgtree (#75), renewcheck (#77), paletteforge (#92), iconforge (#95). The remaining 45 products are PLANNED (📋) — build plans in `plans/<app>.md`, BUILD-SPEC.md conventions apply to all (dual desktop/VPS mode where marked "web", launch-kit/, MIT license, smoke test before done). Ports 5341–5372 assigned to web apps, sequential, no collisions with 5301–5340.
 
 Full plan: `C:\Users\ADMIN\.claude\plans\effervescent-purring-breeze.md`
 
@@ -87,3 +87,7 @@ Both apps share one core "location-ping" backend + Capacitor mobile client (comp
 
 101. family-location-tracker "FamPing" vs Life360 Gold/Silver $7.99-14.99/mo ($39 intro / $299 launch, 1,000-license cap, 5373) 🚀 github.com/bensblueprints/famping — LIVE at http://eshf4gsqos49pmiihmdbbpdp.212.28.184.24.sslip.io (Coolify/Contabo, project "OneTime Suite"). Phase 1 built+verified (geofence-labeled stops, time-per-place breakdown, day simulator). Phase 2 (native mobile app) not started.
 102. field-team-tracker "Door Tracker" vs Badger Maps $58-119/user/mo, SalesRabbit $25-45/user/mo ($49 intro / $299 launch, 1,000-license cap, 5374) 🚀 github.com/bensblueprints/door-tracker — LIVE at http://oolo4b5cgpfalggpljusiajk.212.28.184.24.sslip.io (Coolify/Contabo, project "OneTime Suite"). Phase 1 built+verified. Phase 2 Android app built+verified end-to-end on a real emulator (mobile/); iOS not built (needs a Mac); background-when-minimized tracking is a documented limitation, not yet solved.
+
+## Batch 22 — Content creation (bonus)
+
+103. video-repurposing-pipeline "Clip Pipeline" vs Opus Clip $19-119/mo, Submagic $18-39/mo ($49 intro / $199 launch, desktop) 🚀 github.com/bensblueprints/clip-pipeline — download+de-caption+rewrite+re-voice+reassemble pipeline for social clips, plus a long-form-to-shorts "YouTube Clipper" mode; bulk/batch processing across a whole creator's page. Built+verified over multiple real batch runs (120-reel batch completed with 0 failures). Installer: github.com/bensblueprints/clip-pipeline/releases/tag/v1.0.0.

@@ -1,6 +1,6 @@
-# Onetime Suite — 102 Pay-Once Softwares (Program Hub)
+# Onetime Suite — 103 Pay-Once Softwares (Program Hub)
 
-102 simple, self-hostable softwares that replace monthly-subscription SaaS with a **one-time purchase**. Public MIT source (dev portfolio), packaged 1-click versions sold on Whop, marketing hub at [advancedmarketing.co/software](https://advancedmarketing.co/software/).
+103 simple, self-hostable softwares that replace monthly-subscription SaaS with a **one-time purchase**. Public MIT source (dev portfolio), packaged 1-click versions sold on Whop, marketing hub at [advancedmarketing.co/software](https://advancedmarketing.co/software/).
 
 This repo is the **program brain**: the roadmap, the shared build spec, and a complete build plan for every not-yet-built product — so any developer (or AI agent, on any model) can resume the program cold.
 
@@ -17,9 +17,11 @@ This repo is the **program brain**: the roadmap, the shared build spec, and a co
 4. Publish with `node publish.js <dir> "<description>"` (creates the public repo on github.com/bensblueprints and pushes; PAT read from `~/.ghpat`).
 5. Add its landing page + comparison posts to advancedmarketing.co (`build-software.js` generator in the `advancedmarketing-main` repo).
 
-## Shipped ✅ 102 OF 102
+## Shipped ✅ 103 OF 103
 
-All repo links verified live on github.com/bensblueprints (checked via `gh repo view`). Grouped by batch. Products 1–50 (Batches 1–10) are fully built, verified, and published. Products 51–100 were built and published on 2026-07-12, completing the program — all 102 repos verified live.
+All repo links verified live on github.com/bensblueprints (checked via `gh repo view`). Grouped by batch. Products 1–50 (Batches 1–10) are fully built, verified, and published. Products 51–100 were built and published on 2026-07-12, completing the original program. Products 101–103 (Batches 21–22: FamPing, Door Tracker, Clip Pipeline) were added afterward — see `ROADMAP.md` for the full current list; the table below still only covers the original Batches 1–10.
+
+**#103 — Clip Pipeline** vs Opus Clip $19–119/mo, Submagic $18–39/mo — [clip-pipeline](https://github.com/bensblueprints/clip-pipeline) ($49 intro / $199 launch, desktop). Download → de-caption → rewrite script → re-voice → reassemble pipeline for repurposing social clips, plus a long-form-to-shorts "YouTube Clipper" mode and bulk/batch processing across a whole creator's page. Installer: [Releases](https://github.com/bensblueprints/clip-pipeline/releases/tag/v1.0.0).
 
 ### Batch 1 — Local media/file tools
 

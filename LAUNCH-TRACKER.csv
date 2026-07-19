@@ -1,0 +1,104 @@
+id,repo,brand,platform,port,price,vs
+1,pdf-toolkit,PDFsmith,desktop,,29,SmallPDF $15/mo
+2,bg-remover,Cutaway,desktop,,24,remove.bg $9/mo
+3,whisper-transcriber,WhisperDesk,desktop,,39,Otter $16.99/mo
+4,image-compressor,Shrinkray,desktop,,19,TinyPNG Pro
+5,screen-recorder-desktop,ClipDeck,desktop,,29,Loom $15/mo
+6,uptime-monitor,Upwatch,web,5301,39,UptimeRobot $8/mo / Pingdom
+7,link-shortener,Trimly,web,5302,29,Bitly $29/mo
+8,invoice-generator,Billcraft,web,5303,39,FreshBooks $19/mo
+9,booking-page,Bookslot,web,5304,39,Calendly $10/mo
+10,form-builder,Formforge,web,5305,39,Typeform $29/mo
+11,social-scheduler,PostDock,web,5306,49,Buffer $6/channel/mo
+12,link-in-bio,Linkleaf,web,5307,19,Linktree $5–9/mo
+13,qr-tracker,Scantrail,web,5308,24,QR Tiger $15/mo
+14,og-image-studio,Cardsmith,web,5309,39,Bannerbear $49/mo
+15,email-signature,SigCraft,desktop,,15,WiseStamp $6/mo
+16,web-analytics,Statfox,web,5310,49,Plausible $9–19/mo
+17,changelog-roadmap,Shipnotes,web,5311,49,Canny $79/mo
+18,feedback-widget,Hearback,web,5312,29,Hotjar Surveys $32/mo
+19,knowledge-base,Docwell,web,5313,29,GitBook $79/mo
+20,live-chat,Chatlet,web,5314,49,Crisp $95/mo
+21,kanban,Boardly,web,5315,19,
+22,time-tracker,Timevault,web,5316,29,
+23,habit-tracker,Streakly,desktop,,15,Habitify $5/mo
+24,focus-dashboard,Deepdesk,desktop,,15,Centered ~$10/mo
+25,md-notes,Quillpad,desktop,,29,
+26,cron-monitor,Pingcron,web,5320,29,
+27,webhook-inspector,Hookscope,web,5321,24,
+28,screenshot-api,Snapfleet,web,5322,39,
+29,data-toolbox,Wrangle,desktop,,15,
+30,db-backup,Vaultkeeper,web,5323,39,
+31,waitlist-referral,Queuecraft,web,5324,29,
+32,testimonial-wall,Bravowall,web,5325,29,
+33,price-monitor,Hawkwatch,web,5326,34,
+34,email-campaigns,Postbird,web,5327,59,
+35,license-server,Keymaster,web,5328,49,
+36,podcast-host,Castport,web,5329,39,
+37,md-blog,Inkpress,web,5330,29,
+38,rss-reader,Feedloft,web,5331,24,
+39,clip-grabber,Reelsnag,desktop,,24,
+40,tts-studio,Voicebarn,desktop,,34,
+41,file-transfer,Droplink,web,5332,29,
+42,snippet-manager,Snipvault,web,5333,19,
+43,e-signature,Inkseal,web,5334,49,
+44,expense-tracker,Ledgerly,web,5335,29,
+45,crm-lite,Dealstack,web,5336,39,
+46,stream-overlays,Overlayr,web,5337,24,
+47,digital-signage,Signboard,web,5338,49,
+48,rank-tracker,Serpdeck,web,5339,39,
+49,comment-widget,Chatterbox,web,5340,24,
+50,ocr-tool,Textract,desktop,,19,
+51,helpdesk-tickets,Deskly,web,5341,49,Zendesk
+52,status-page,Upkeep Status,web,5342,29,Statuspage.io
+53,broken-link-checker,Linkguard,web,5343,24,Ahrefs/Dr Link Check
+54,sitemap-generator,Maptrail,desktop,,19,
+55,api-docs-generator,Docsmith API,desktop,,29,ReadMe.io
+56,password-manager-selfhosted,Vaultly,web,5344,39,1Password Teams
+57,2fa-authenticator-backup,Keyloop,desktop,,19,Authy/1Password
+58,env-secrets-manager,Secretbox,web,5345,39,Doppler
+59,ssl-cert-monitor,Certwatch,web,5346,24,paid SSL monitors
+60,log-viewer-aggregator,Logbin,web,5347,34,Papertrail
+61,memeforge,Memeforge,desktop,,15,Kapwing
+62,resume-builder,Resumecraft,desktop,,19,Zety
+63,proposal-generator,Pitchcraft,web,5348,29,Proposify/PandaDoc
+64,contract-templates,Contractly,desktop,,29,PandaDoc templates
+65,video-clip-captioner,Captionly,desktop,,34,Submagic
+66,utm-campaign-builder,UTMcraft,web,5349,19,UTM.io
+67,affiliate-tracker,Reflink,web,5350,39,Tapfiliate
+68,review-aggregator-widget,Star Stack,web,5351,29,Trustpilot Business
+69,heatmap-session-recorder,Clickmap,web,5352,49,Hotjar
+70,ab-testing-tool,Splitpoint,web,5353,49,VWO
+71,applicant-tracker,Hirestack,web,5354,49,Greenhouse/BambooHR
+72,shift-scheduler,Shiftly,web,5355,29,When I Work
+73,onboarding-checklist,Rampcheck,web,5356,29,Trainual
+74,timesheet-approval,Punchcard,web,5357,29,QuickBooks Time
+75,orgtree,Orgtree,desktop,,19,Pingboard
+76,budget-planner-personal,Ledgerlite Home,desktop,,15,YNAB
+77,renewcheck,Renewcheck,desktop,,15,Rocket Money premium
+78,recurring-billing-mini,Billoop,web,5358,49,Chargebee
+79,quote-estimator,Quotewell,desktop,,29,PandaDoc/Proposify
+80,receipt-scanner-expense,Snapreceipt,desktop,,19,Expensify
+81,property-listing-site,Listcraft,web,5359,39,Zillow Premier Agent
+82,restaurant-menu-qr,Menuly,web,5360,24,Toast QR
+83,appointment-reminder-sms,Remindly,web,5361,34,SimpleTexting
+84,review-request-automator,Askback,web,5362,34,Podium
+85,local-seo-citation-tracker,Citewatch,web,5363,34,BrightLocal
+86,course-builder-lms,Lessonforge,web,5364,49,Teachable
+87,quiz-builder,Quizcraft,web,5365,29,Typeform/Outgrow
+88,community-forum,Forumly,web,5366,39,Circle
+89,member-directory,Roster,web,5367,19,Glue Up
+90,event-registration,Eventcraft,web,5368,39,
+91,mockup-generator,Mockcraft,desktop,,19,Placeit
+92,paletteforge,Paletteforge,desktop,,15,Coolors Pro
+93,social-media-graphics-templates,Postcraft Templates,desktop,,19,Canva Pro
+94,presentation-builder,Slidecraft,desktop,,29,Beautiful.ai
+95,iconforge,Iconforge,desktop,,15,Iconscout subs
+96,redirect-manager,Redirectly,web,5369,24,Rebrandly
+97,customer-portal-billing,Clientdesk,web,5370,39,ChartMogul/Baremetrics
+98,nps-survey-tool,Pulsecheck,web,5371,29,Delighted
+99,data-backup-cloud-sync,Syncvault,desktop,,29,Backblaze/iDrive
+100,feedback-roadmap-voting,Voicebox,web,5372,34,Canny
+101,famping,FamPing,web,5373,39,Life360 Gold/Silver
+102,door-tracker,Door Tracker,web,5374,49,Badger Maps
+103,clip-pipeline,Clip Pipeline,desktop,,49,Opus Clip

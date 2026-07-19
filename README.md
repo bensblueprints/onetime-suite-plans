@@ -9,6 +9,10 @@ This repo is the **program brain**: the roadmap, the shared build spec, and a co
 > desktop, one-time activation for self-hosted — no phone-home after). Status,
 > customer flows, and build instructions: **[LICENSING.md](LICENSING.md)**.
 
+## Daily launch tracker
+
+"Shipped" here means the repo is public — it doesn't mean every app has been polished and properly launched (Whop listing live, landing page live, verified end-to-end). **[LAUNCH-TRACKER.md](LAUNCH-TRACKER.md)** tracks the one-app-a-day fix-up-and-launch pass across all 103 apps, backed by a [GitHub Project board](../../projects) and [`LAUNCH-TRACKER.csv`](LAUNCH-TRACKER.csv).
+
 ## How to build the next product
 
 1. Read `BUILD-SPEC.md` (shared requirements: stack, dual-mode desktop/VPS, repo files, launch-kit contents, verification rules).

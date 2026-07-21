@@ -18,6 +18,6 @@ COPY package.json ./
 RUN npm install --omit=dev --no-audit --no-fund
 COPY . .
 
-EXPOSE 5361
+EXPOSE 5375
 VOLUME ["/data"]
 CMD ["node", "server/index.js"]

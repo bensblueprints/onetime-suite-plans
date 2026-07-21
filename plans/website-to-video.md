@@ -41,7 +41,7 @@ no uploading the sites you capture to someone else's cloud.
   (SSRF hygiene; default true since self-hosters capture internal dashboards — documented).
 
 ## Architecture
-BUILD-SPEC dual-mode web app: Node 20+ Express + better-sqlite3, single process, **port 5361**.
+BUILD-SPEC dual-mode web app: Node 20+ Express + better-sqlite3, single process, **port 5375**.
 Frontend is a premium plain HTML/CSS/JS renderer (dark default) served statically by Express —
 video tooling is simple enough that a hand-built UI stays lighter than a Vite/React bundle and
 avoids a build step in Docker. Electron wrapper (`electron/main.js`) starts the same server on a
@@ -86,9 +86,9 @@ MAX_CONCURRENT, JOB_TIMEOUT_MS, ALLOW_PRIVATE, CHROMIUM_PATH, FFMPEG_PATH, PUPPE
 4. Library grid. 5. API keys. 6. Settings. 7. Docs page rendering the endpoint reference. Dark default.
 
 ## Smoke test spec (`test/smoke.js`)
-Spawn server on port **5371**, temp DB + temp renders dir, `MAX_CONCURRENT=1`,
+Spawn server on port **5385**, temp DB + temp renders dir, `MAX_CONCURRENT=1`,
 `FFMPEG_PATH`=bundled ffmpeg, `CHROMIUM_PATH`=bundled chromium. Start a local target
-`http.createServer` on **5372** serving a tall HTML page (≥3000px) with a `#hero` header,
+`http.createServer` on **5386** serving a tall HTML page (≥3000px) with a `#hero` header,
 distinct section colors, a title, and `prefers-color-scheme` CSS. Assertions:
 1. Health ok and reports chromium+ffmpeg found; login/auth gates (wrong password 401; keys API 401).
 2. Create API key → 201, key starts with `uv_`.

@@ -10,8 +10,8 @@ const fs = require('fs');
 const os = require('os');
 const { spawn } = require('child_process');
 
-const SRV_PORT = 5371;
-const TARGET_PORT = 5372;
+const SRV_PORT = 5385;
+const TARGET_PORT = 5386;
 const BASE = `http://127.0.0.1:${SRV_PORT}`;
 const PASSWORD = 'smoke-pass';
 

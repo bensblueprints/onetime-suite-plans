@@ -102,3 +102,4 @@ id,repo,brand,platform,port,price,vs
 101,famping,FamPing,web,5373,39,Life360 Gold/Silver
 102,door-tracker,Door Tracker,web,5374,49,Badger Maps
 103,clip-pipeline,Clip Pipeline,desktop,,49,Opus Clip
+104,website-to-video,UrlVid,web,5375,39,Placid $39/mo

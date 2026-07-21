@@ -21,9 +21,11 @@ This repo is the **program brain**: the roadmap, the shared build spec, and a co
 4. Publish with `node publish.js <dir> "<description>"` (creates the public repo on github.com/bensblueprints and pushes; PAT read from `~/.ghpat`).
 5. Add its landing page + comparison posts to advancedmarketing.co (`build-software.js` generator in the `advancedmarketing-main` repo).
 
-## Shipped ✅ 103 OF 103
+## Shipped ✅ 103 OF 103 (+1 built)
 
-All repo links verified live on github.com/bensblueprints (checked via `gh repo view`). Grouped by batch. Products 1–50 (Batches 1–10) are fully built, verified, and published. Products 51–100 were built and published on 2026-07-12, completing the original program. Products 101–103 (Batches 21–22: FamPing, Door Tracker, Clip Pipeline) were added afterward — see `ROADMAP.md` for the full current list; the table below still only covers the original Batches 1–10.
+All repo links verified live on github.com/bensblueprints (checked via `gh repo view`). Grouped by batch. Products 1–50 (Batches 1–10) are fully built, verified, and published. Products 51–100 were built and published on 2026-07-12, completing the original program. Products 101–103 (Batches 21–22: FamPing, Door Tracker, Clip Pipeline) were added afterward, and **#104 UrlVid** (Batch 23) is built+verified but not yet published — see `ROADMAP.md` for the full current list; the table below still only covers the original Batches 1–10.
+
+**#104 — UrlVid** (website-to-video) vs Placid $39/mo, Veed website recorder $24/mo, Browserless $30+/mo — ($39 / intro $29, web + desktop, port 5375). Turn any URL into a video: the local **Hyperframes** engine drives a headless Chromium through the page — scroll walkthrough, Ken-Burns pan/zoom, or hero-animation shot — and encodes MP4/WebM/GIF at landscape, square, or 9:16 vertical. 100% local, no render credits, no watermark. REST API (keys, rate limits, async jobs) + playground UI; 32-assertion end-to-end smoke test passing. Built+verified 2026-07-21 (branch `claude/urlvid-website-to-video-4tlxy4`, PR #104); not yet published to its own repo/Whop.
 
 **#103 — Clip Pipeline** vs Opus Clip $19–119/mo, Submagic $18–39/mo — [clip-pipeline](https://github.com/bensblueprints/clip-pipeline) ($49 intro / $199 launch, desktop). Download → de-caption → rewrite script → re-voice → reassemble pipeline for repurposing social clips, plus a long-form-to-shorts "YouTube Clipper" mode and bulk/batch processing across a whole creator's page. Installer: [Releases](https://github.com/bensblueprints/clip-pipeline/releases/tag/v1.0.0).
 

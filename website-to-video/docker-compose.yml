@@ -2,9 +2,9 @@ services:
   urlvid:
     build: .
     ports:
-      - "5361:5361"
+      - "5375:5375"
     environment:
-      - PORT=5361
+      - PORT=5375
       - ADMIN_PASSWORD=${ADMIN_PASSWORD:-change-me}
       - DATA_DIR=/data
       - ALLOW_PRIVATE=false

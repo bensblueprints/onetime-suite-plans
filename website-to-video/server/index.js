@@ -12,7 +12,7 @@ const ff = require('./ffmpeg');
 function config() {
   const dataDir = process.env.DATA_DIR || path.join(__dirname, '..', 'data');
   return {
-    port: parseInt(process.env.PORT || '5361', 10),
+    port: parseInt(process.env.PORT || '5375', 10),
     adminPassword: process.env.ADMIN_PASSWORD || 'admin',
     dbPath: process.env.DB_PATH || path.join(dataDir, 'urlvid.db'),
     rendersDir: process.env.RENDERS_DIR || path.join(dataDir, 'renders'),

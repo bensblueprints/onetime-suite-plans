@@ -10,6 +10,6 @@
   - **Polished** — bugs fixed, UI/UX pass done, smoke-tested locally
   - **Launched** — Whop listing / landing page live, publicly purchasable
   - **Verified** — confirmed working end-to-end in production (real purchase or full manual walkthrough)
-- **Labels:** `platform:web` (VPS-hosted, has a port 5301–5374) or `platform:desktop` (installer/DMG), so you can filter the board by platform.
+- **Labels:** `platform:web` (VPS-hosted, has a port 5301–5375) or `platform:desktop` (installer/DMG), so you can filter the board by platform.
 
 At one app/day, clearing the full backlog is ~103 days.

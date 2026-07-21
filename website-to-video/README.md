@@ -42,7 +42,7 @@ a scrolling showcase — as many times as you want.
 ```bash
 npm install
 npm start
-# → http://localhost:5361   (default admin password: "admin" — change it)
+# → http://localhost:5375   (default admin password: "admin" — change it)
 ```
 
 First run needs two things on the machine (auto-detected, or point at them explicitly):
@@ -70,7 +70,7 @@ docker compose up -d    # installs Chromium + full ffmpeg in the image; data per
 ## API
 
 ```bash
-curl -X POST "http://localhost:5361/api/v1/render" \
+curl -X POST "http://localhost:5375/api/v1/render" \
   -H "X-Api-Key: uv_..." -H "Content-Type: application/json" \
   -d '{"url":"https://stripe.com","mode":"scroll","preset":"vertical","format":"mp4","duration":10}' \
   --output stripe.mp4

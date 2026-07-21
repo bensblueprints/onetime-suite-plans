@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UrlVid — turn any website into a video</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%236d5efc'/%3E%3Cpath d='M13 10l9 6-9 6z' fill='white'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <!-- Login gate -->
+  <div id="login" class="login-wrap hidden">
+    <form id="login-form" class="login-card">
+      <div class="logo-badge">▶</div>
+      <h1>UrlVid</h1>
+      <p class="muted">Turn any website into a video.</p>
+      <input type="password" id="login-password" placeholder="Admin password" autocomplete="current-password" />
+      <button type="submit" class="btn btn-primary">Sign in</button>
+      <div id="login-error" class="error hidden"></div>
+    </form>
+  </div>
+
+  <!-- App shell -->
+  <div id="app" class="app hidden">
+    <aside class="sidebar">
+      <div class="brand"><span class="logo-badge sm">▶</span> UrlVid</div>
+      <nav>
+        <a data-view="dashboard" class="nav-item active">Dashboard</a>
+        <a data-view="playground" class="nav-item">Playground</a>
+        <a data-view="library" class="nav-item">Library</a>
+        <a data-view="keys" class="nav-item">API Keys</a>
+        <a data-view="docs" class="nav-item">Docs</a>
+      </nav>
+      <div class="sidebar-foot">
+        <div id="engine-status" class="engine-status muted"></div>
+        <button id="logout" class="btn btn-ghost btn-sm">Sign out</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <!-- Dashboard -->
+      <section data-panel="dashboard" class="panel">
+        <h2>Dashboard</h2>
+        <div class="stat-grid" id="stat-grid"></div>
+        <div class="card">
+          <h3>Engine</h3>
+          <div id="engine-detail" class="engine-detail"></div>
+        </div>
+      </section>
+
+      <!-- Playground -->
+      <section data-panel="playground" class="panel hidden">
+        <h2>Playground</h2>
+        <div class="playground">
+          <form id="render-form" class="render-form card">
+            <label>Website URL
+              <input type="url" name="url" placeholder="https://example.com" required />
+            </label>
+            <div class="row">
+              <label>Mode
+                <select name="mode">
+                  <option value="scroll">Scroll walkthrough</option>
+                  <option value="pan">Pan &amp; zoom (Ken Burns)</option>
+                  <option value="hero">Hero (record animation)</option>
+                </select>
+              </label>
+              <label>Format
+                <select name="format" id="format-select"></select>
+              </label>
+            </div>
+            <label>Size
+              <div class="preset-row" id="preset-row">
+                <button type="button" class="chip active" data-preset="landscape">16:9 · 1920×1080</button>
+                <button type="button" class="chip" data-preset="square">1:1 · 1080×1080</button>
+                <button type="button" class="chip" data-preset="vertical">9:16 · 1080×1920</button>
+              </div>
+              <input type="hidden" name="preset" value="landscape" />
+            </label>
+            <div class="row">
+              <label>Duration (s) <input type="number" name="duration" value="8" min="1" max="60" /></label>
+              <label>FPS <input type="number" name="fps" value="30" min="1" max="60" /></label>
+              <label>Quality <input type="number" name="quality" value="70" min="1" max="100" /></label>
+            </div>
+            <details class="advanced">
+              <summary>Advanced</summary>
+              <div class="row">
+                <label><input type="checkbox" name="dark_mode" /> Dark mode</label>
+                <label>Wait until
+                  <select name="wait_until">
+                    <option value="networkidle2">networkidle2</option>
+                    <option value="networkidle0">networkidle0</option>
+                    <option value="load">load</option>
+                    <option value="domcontentloaded">domcontentloaded</option>
+                  </select>
+                </label>
+              </div>
+              <div class="row">
+                <label>Delay after load (ms) <input type="number" name="delay" value="0" min="0" max="10000" /></label>
+                <label>Hold start/end (ms) <input type="number" name="hold_start" value="400" min="0" max="10000" /></label>
+              </div>
+              <label>Hide selectors (comma-separated CSS)
+                <input type="text" name="hide_selectors" placeholder="#cookie-banner, .ad" />
+              </label>
+              <label>API key (for the request)
+                <select name="key" id="key-select"></select>
+              </label>
+            </details>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary" id="render-btn">Render video</button>
+              <span id="render-progress" class="muted"></span>
+            </div>
+          </form>
+
+          <div class="preview card">
+            <h3>Result</h3>
+            <div id="preview-body" class="preview-body">
+              <p class="muted">Your rendered video appears here.</p>
+            </div>
+            <details class="curl">
+              <summary>Copy as curl</summary>
+              <pre id="curl-box"></pre>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Library -->
+      <section data-panel="library" class="panel hidden">
+        <div class="panel-head">
+          <h2>Library</h2>
+          <input type="search" id="library-search" placeholder="Filter by URL…" />
+        </div>
+        <div id="library-grid" class="library-grid"></div>
+      </section>
+
+      <!-- Keys -->
+      <section data-panel="keys" class="panel hidden">
+        <div class="panel-head"><h2>API Keys</h2>
+          <button id="new-key" class="btn btn-primary btn-sm">New key</button>
+        </div>
+        <div id="keys-list" class="keys-list"></div>
+      </section>
+
+      <!-- Docs -->
+      <section data-panel="docs" class="panel hidden">
+        <h2>API Docs</h2>
+        <div id="docs-body" class="card docs"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

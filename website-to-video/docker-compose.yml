@@ -1,0 +1,17 @@
+services:
+  urlvid:
+    build: .
+    ports:
+      - "5375:5375"
+    environment:
+      - PORT=5375
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-change-me}
+      - DATA_DIR=/data
+      - ALLOW_PRIVATE=false
+      - PUPPETEER_ARGS=--no-sandbox --disable-dev-shm-usage
+    volumes:
+      - urlvid-data:/data
+    restart: unless-stopped
+
+volumes:
+  urlvid-data:

@@ -21,6 +21,8 @@ const stateDir = () => app.getPath('userData');
 const fmt = t => { try { return new Date(t).toLocaleDateString(); } catch { return '?'; } };
 
 async function gateLicense() {
+  // Documented bypass for CI and local smoke runs — never ship it set.
+  if (process.env.SKIP_LICENSE_CHECK) return true;
   for (;;) {
     try {
       const r = await license.ensureLicensed({ stateDir: stateDir(), openUrl: u => shell.openExternal(u) });

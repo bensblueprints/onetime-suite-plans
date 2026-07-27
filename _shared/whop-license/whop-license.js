@@ -30,6 +30,13 @@ const REGISTRY_BASE = process.env.WHOP_DEVICE_REGISTRY || 'https://license.oneti
 const RECHECK_MS = 24 * 60 * 60 * 1000;        // background re-validate daily
 const GRACE_MS = 10 * 24 * 60 * 60 * 1000;     // offline grace: 10 days
 
+// Owner accounts are licensed on every app, device cap bypassed.
+const OWNER_USER_IDS = ['user_WrL08cYYDgWY1']; // ben@freewebsitedesign.today
+
+// Bundles that grant EVERY app in the suite. Always checked alongside the app's
+// own id, so a Complete buyer is never told to buy the app again.
+const BUNDLE_PRODUCT_IDS = ['prod_deLvZPOasRITY']; // OneTimeSuite Complete
+
 function loadConfig(overrides = {}) {
   let file = {};
   try { file = JSON.parse(fs.readFileSync(path.join(__dirname, 'whop-license.config.json'), 'utf8')); } catch {}
@@ -42,6 +49,13 @@ function loadConfig(overrides = {}) {
     ...overrides,
   };
   if (!cfg.experienceId || !cfg.clientId) throw new Error('whop-license: experienceId and clientId are required (whop-license.config.json)');
+  // Every id that grants this app: its own, any extras the app declares, plus
+  // the suite bundles. cfg.experienceId stays the primary (device registry).
+  cfg.grantingIds = [...new Set([
+    cfg.experienceId,
+    ...(Array.isArray(file.alsoGrantedBy) ? file.alsoGrantedBy : []),
+    ...BUNDLE_PRODUCT_IDS,
+  ])];
   return cfg;
 }
 
@@ -109,15 +123,48 @@ async function refreshTokens(cfg, refreshToken) {
   return j;
 }
 
-/* Check the signed-in user's own access with their own token. */
+/* Authoritative check: the registry resolves the user's real Whop memberships
+ * with the company key, so bundle grants (OneTimeSuite Complete) are seen. The
+ * per-id endpoint below only reports direct grants. Returns null if the
+ * registry can't answer, so the caller falls back. */
+async function checkAccessViaRegistry(cfg, accessToken) {
+  try {
+    const res = await fetch(`${REGISTRY_BASE}/access/check`, {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${accessToken}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ product_ids: cfg.grantingIds }),
+    });
+    if (!res.ok) return null;
+    const j = await res.json();
+    if (typeof j.hasAccess !== 'boolean') return null;
+    return { hasAccess: j.hasAccess, accessLevel: j.hasAccess ? 'customer' : 'no_access', grantedId: j.productId };
+  } catch {
+    return null;
+  }
+}
+
+/* Check the signed-in user's own access with their own token. Any granting id
+ * (the app itself, declared extras, or a suite bundle) unlocks the app. */
 async function checkAccess(cfg, accessToken, userId) {
-  const res = await fetch(`${API_BASE}/users/${encodeURIComponent(userId)}/access/${cfg.experienceId}`, {
-    headers: { Authorization: `Bearer ${accessToken}` },
-  });
-  if (res.status === 401 || res.status === 403) return { hasAccess: false, accessLevel: 'no_access', authExpired: res.status === 401 };
-  if (!res.ok) throw new Error(`access check HTTP ${res.status}`);
-  const j = await res.json();
-  return { hasAccess: !!j.has_access, accessLevel: j.access_level || (j.has_access ? 'customer' : 'no_access') };
+  if (OWNER_USER_IDS.includes(userId)) {
+    return { hasAccess: true, accessLevel: 'admin', grantedId: 'owner' };
+  }
+
+  const viaRegistry = await checkAccessViaRegistry(cfg, accessToken);
+  if (viaRegistry && viaRegistry.hasAccess) return viaRegistry;
+
+  let authExpired = false;
+  for (const id of cfg.grantingIds) {
+    const res = await fetch(`${API_BASE}/users/${encodeURIComponent(userId)}/access/${id}`, {
+      headers: { Authorization: `Bearer ${accessToken}` },
+    });
+    if (res.status === 401) { authExpired = true; continue; }
+    if (res.status === 403 || res.status === 404) continue;
+    if (!res.ok) continue;
+    const j = await res.json().catch(() => ({}));
+    if (j.has_access) return { hasAccess: true, accessLevel: j.access_level || 'customer', grantedId: id };
+  }
+  return { hasAccess: false, accessLevel: 'no_access', authExpired };
 }
 
 /* ---------- central device registry (desktop apps only) ---------- */

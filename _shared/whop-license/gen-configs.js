@@ -13,7 +13,10 @@ const path = require('path');
 
 const SUITE = path.join(__dirname, '..', '..');
 const SITE_SRC = 'C:/Users/ADMIN/Desktop/onetimesuite-com/src';
-const CLIENT_ID = 'app_B2TMUEvC9aRUNZ'; // OneTimeSuite Whop OAuth app
+// PUBLIC OAuth client (PKCE, no secret). Do NOT use app_B2TMUEvC9aRUNZ — it is
+// confidential, so token exchange fails with "client_secret is required".
+// See DESKTOP-BUILD-GUIDE.md §1.
+const CLIENT_ID = 'app_1alGIvT167sGCl';
 
 const expMap = require(path.join(SUITE, 'license-experience-map.json'));
 const catalog = {};

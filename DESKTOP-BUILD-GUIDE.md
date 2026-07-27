@@ -48,7 +48,20 @@ Canonical: `onetime-suite/_shared/whop-license/whop-license.js` (+ `license-gate
   and **a `nonce` is REQUIRED with the openid scope** (Whop rejects the authorize otherwise).
 - **Owner allowlist**: `OWNER_USER_IDS = ['user_WrL08cYYDgWY1']` (ben@freewebsitedesign.today)
   short-circuits `checkAccess()` to always-licensed, device-cap bypassed. Extend this array to
-  grant other accounts blanket access.
+  grant other accounts blanket access. *(Documented here since 2026-07-16 but only actually
+  implemented in the module on 2026-07-28 — earlier vendored copies do not have it.)*
+- **Bundle grants** (2026-07-28): `BUNDLE_PRODUCT_IDS = ['prod_deLvZPOasRITY']` (OneTimeSuite
+  Complete) is checked alongside the app's own id in every app, so a Complete buyer is never
+  told to buy the app again. An app can name extra granting ids via `"alsoGrantedBy": [...]`
+  in its config. Access resolves first through the registry's `POST /access/check`, which
+  matches the buyer's real Whop memberships using the company key (`WHOP_API_KEY` env on the
+  registry, set 2026-07-28) and expands `exp_` → products; the per-id user-token endpoint sees
+  only *direct* grants, which is why Complete buyers were previously denied. Falls back to the
+  per-id check when the registry can't answer.
+- **A denied gate looks like a broken app, not a licensing problem.** `gateLicense()` runs
+  before the tray and windows exist, so a wrongly-denied user gets a dialog and an app where
+  nothing is clickable and no settings load. Suspect licensing first when an app seems inert
+  on first run.
 - **3-device cap** is built in (self-serve deactivate). Central registry:
   `license.onetimesuite.com` (device register/deactivate uses the buyer's own token).
 - `SKIP_LICENSE_CHECK=1` env bypasses the gate entirely — for CI and local runs only, never
